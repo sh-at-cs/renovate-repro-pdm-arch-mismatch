@@ -7,30 +7,36 @@ strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
 content_hash = "sha256:c963c88feb6de343be50f4da5808bc4d6727139c30b098adbbd51e2ab5207953"
 
+[[metadata.targets]]
+requires_python = "==3.12.5"
+platform = "manylinux_2_31_x86_64"
+implementation = "cpython"
+gil_disabled = false
+
 [[package]]
 name = "boto3"
-version = "1.34.162"
+version = "1.35.2"
 requires_python = ">=3.8"
 summary = "The AWS SDK for Python"
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 dependencies = [
-    "botocore<1.35.0,>=1.34.162",
+    "botocore<1.36.0,>=1.35.2",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.11.0,>=0.10.0",
 ]
 files = [
-    {file = "boto3-1.34.162-py3-none-any.whl", hash = "sha256:d6f6096bdab35a0c0deff469563b87d184a28df7689790f7fe7be98502b7c590"},
-    {file = "boto3-1.34.162.tar.gz", hash = "sha256:873f8f5d2f6f85f1018cbb0535b03cceddc7b655b61f66a0a56995238804f41f"},
+    {file = "boto3-1.35.2-py3-none-any.whl", hash = "sha256:c2f0837a259002489e59d1c30008791e3b3bb59e30e48c64e1d2d270147a4549"},
+    {file = "boto3-1.35.2.tar.gz", hash = "sha256:cbf197ce28f04bc1ffa1db0aa26a1903d9bfa57a490f70537932e84367cdd15b"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.34.162"
+version = "1.35.2"
 requires_python = ">=3.8"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 dependencies = [
     "jmespath<2.0.0,>=0.7.1",
     "python-dateutil<3.0.0,>=2.1",
@@ -38,8 +44,8 @@ dependencies = [
     "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "botocore-1.34.162-py3-none-any.whl", hash = "sha256:2d918b02db88d27a75b48275e6fb2506e9adaaddbec1ffa6a8a0898b34e769be"},
-    {file = "botocore-1.34.162.tar.gz", hash = "sha256:adc23be4fb99ad31961236342b7cbf3c0bfc62532cd02852196032e8c0d682f3"},
+    {file = "botocore-1.35.2-py3-none-any.whl", hash = "sha256:92b168d8be79055bb25754aa34d699866d8aa66abc69f8ce99b0c191bd9c6e70"},
+    {file = "botocore-1.35.2.tar.gz", hash = "sha256:96c8eb6f0baed623a1b57ca9f24cb21d5508872cf0dfebb55527a85b6dbc76ba"},
 ]
 
 [[package]]
@@ -48,7 +54,7 @@ version = "1.0.1"
 requires_python = ">=3.7"
 summary = "JSON Matching Expressions"
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 files = [
     {file = "jmespath-1.0.1-py3-none-any.whl", hash = "sha256:02e2e4cc71b5bcab88332eebf907519190dd9e6e82107fa7f83b1003a6252980"},
     {file = "jmespath-1.0.1.tar.gz", hash = "sha256:90261b206d6defd58fdd5e85f478bf633a2901798906be2ad389150c5c60edbe"},
@@ -60,7 +66,7 @@ version = "2.9.0.post0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Extensions to the standard Python datetime module"
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 dependencies = [
     "six>=1.5",
 ]
@@ -75,7 +81,7 @@ version = "0.10.2"
 requires_python = ">=3.8"
 summary = "An Amazon S3 Transfer Manager"
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 dependencies = [
     "botocore<2.0a.0,>=1.33.2",
 ]
@@ -90,7 +96,7 @@ version = "1.16.0"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 summary = "Python 2 and 3 compatibility utilities"
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 files = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
@@ -102,7 +108,7 @@ version = "2.2.2"
 requires_python = ">=3.8"
 summary = "HTTP library with thread-safe connection pooling, file post, and more."
 groups = ["default"]
-marker = "python_full_version == \"3.10.12\""
+marker = "python_full_version == \"3.12.5\""
 files = [
     {file = "urllib3-2.2.2-py3-none-any.whl", hash = "sha256:a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"},
     {file = "urllib3-2.2.2.tar.gz", hash = "sha256:dd505485549a7a552833da5e6063639d0d177c04f23bc3864e41e5dc5f612168"},
