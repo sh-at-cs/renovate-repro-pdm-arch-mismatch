@@ -6,12 +6,16 @@ authors = [
     {name = "sh-at-cs", email = "112704226+sh-at-cs@users.noreply.github.com"},
 ]
 dependencies = [
-    "boto3>=1.35"
+    "boto3>=1.35",
 ]
-requires-python = "==3.10.*"
+requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "Public Domain"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
