@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:bffc3a2f354b2004fcf3b45e2e224f8ad5d075d9f435e450e5fb297579fd4d2a"
+content_hash = "sha256:c963c88feb6de343be50f4da5808bc4d6727139c30b098adbbd51e2ab5207953"
 
 [[package]]
 name = "boto3"
